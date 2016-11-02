@@ -273,13 +273,13 @@ body {
      }
      .islider-dot{
 
-    width: 0.5em;
-    height: 0.5em;
+    width: 0.3em;
+    height: 0.3em;
     border: 1px solid #043583;
      }
      .islider-dot.active{
         background-color: #0069ff;
      }
             .islider-dot-wrap{
-            bottom:-5%
+            bottom:-7%
             }
