@@ -243,7 +243,7 @@ body {
      .page7 .man{
 
         position: absolute;
-        left: -150%;
+        left: -180%;
         bottom: 10%;
         transition:all ease 0.3s;
      }
@@ -268,7 +268,7 @@ body {
 
      }
      .islider-active .page7 .btn{
-        bottom:4%;
+        bottom:2%;
 
      }
      .islider-dot{
