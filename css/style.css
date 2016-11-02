@@ -87,7 +87,7 @@ body {
        }
        .page2 .bot{ 
         position: absolute;
-        bottom: 0;
+        bottom: -10%;
         right: 0 
        }
        .page2 .top img{
