@@ -244,7 +244,7 @@ body {
 
         position: absolute;
         left: -150%;
-        bottom: 15%;
+        bottom: 10%;
         transition:all ease 0.3s;
      }
      .page7 .btn{
@@ -268,7 +268,7 @@ body {
 
      }
      .islider-active .page7 .btn{
-        bottom:7%;
+        bottom:4%;
 
      }
      .islider-dot{
@@ -280,3 +280,6 @@ body {
      .islider-dot.active{
         background-color: #0069ff;
      }
+            .islider-dot-wrap{
+            bottom:-5%
+            }
