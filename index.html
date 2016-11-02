@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <title>偶卖啦推广</title>
+    <link href="css/iSlider.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div id="iSlider-wrapper"></div>
+<div id="page1" style="display:none">
+    <div class='page1' >
+        <p class='tit'>
+            <img src="image/p1_tit.png">
+        </p>
+        <div class="left">
+            <img src="image/p1_1.png" alt="">
+            <img src="image/p1_2.png" alt="">
+            <img src="image/p1_3.png" alt="">
+        </div>
+        <div class="center">
+            <img src="image/p1_vs.png" alt="">
+        </div>
+        <div class="right">
+            <img src="image/p1_4.png" alt="">
+            <img src="image/p1_5.png" alt="">
+            <img src="image/p1_6.png" alt="">
+        </div>
+    </div>
+</div>
+<div id="page2" style="display:none">
+    <div class='page2' >
+        <div class="top">
+            <img src="image/p2_1.png" alt="">
+        </div>
+         <div class="bot">
+            <img src="image/p2_2.png" alt="">
+        </div>
+        <div class="bg">
+            <img src="image/p2_3.png" alt="" style="display: none">
+        </div>
+        <p><img src="image/p2_3.png" alt=""></p>
+
+    </div>
+</div>
+<div id="page3" style="display:none">
+    <div class='page2 page3 ' >
+         <div class="top">
+            <img src="image/p3_1.png" alt="">
+        </div>
+         <div class="bot">
+            <img src="image/p3_2.png" alt="">
+        </div>
+        <div class="bg">
+            <img src="image/p3_3.png" alt="" style="display: none">
+        </div>
+        <p><img src="image/p3_3.png" alt=""></p>
+    </div>
+</div>
+<div id="page4" style="display:none">
+    <div class='page4' >
+
+    <div class="top">
+            <img src="image/p4_1.png" alt="">
+        </div>
+         <div class="bot">
+            <img src="image/p4_2.png" alt="">
+        </div>
+       
+        <p><img src="image/p4_3.png" alt=""></p>
+
+    </div>
+</div>
+<div id="page5" style="display:none">
+    <div class='page5' >
+        <p><img src="image/p5_2.png" alt=""></p>
+        <span>
+            <img src="image/p5_3.png" alt="">
+        </span>
+
+
+    </div>
+</div>
+<div id="page6" style="display:none">
+    <div class='page5 page6 ' >
+         <p><img src="image/p6_2.png" alt=""></p>
+        <span>
+            <img src="image/p6_1.png" alt="">
+        </span>
+
+   </div>
+</div>
+<div id="page7" style="display:none">
+    <div class='page7' >
+        <div class="tit">
+            <img src="image/p7_1.png" alt="">
+        </div>
+         <div class="circle">
+            <img src="image/p7_3.png" alt="">
+        </div>
+         <div class="man">
+            <img src="image/p7_2.png" alt="">
+        </div>
+         <div class="btn">
+            <a href=""><img src="image/p7_4.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+<script type="text/javascript" src="js/iSlider.js"></script>
+<script type="text/javascript" src="js/iSlider.plugin.dot.js"></script>
+<script type="text/javascript" src="js/iSlider.plugin.button.js"></script>
+<script id="">
+    var list = [
+        // picture
+        {
+            content: document.querySelector('#page1 > .page1')
+        },
+        // HTML String
+        {
+            content: document.querySelector('#page2 > .page2')
+        },
+        // element
+        {
+            content:document.querySelector('#page3 > .page3')
+        },
+        // fragment
+        {
+            content: document.querySelector('#page4 > .page4')
+        },
+        // dom
+        {
+            content: document.querySelector('#page5 > .page5')
+        },
+        {
+            content: document.querySelector('#page6 > .page6')
+        },
+        {
+            content: document.querySelector('#page7 > .page7')
+        },
+        
+    ];
+
+    
+
+     var S = new iSlider({
+        dom: document.getElementById('iSlider-wrapper'),
+        data: list,
+        isLooping: 0,
+        isOverspread: 1,
+        animateTime: 300, // ms
+        plugins: ['dot', 'button']
+    });
+
+</script>
+
+
+<script>
+$(function(){
+   
+   setTimeout(function(){
+        $('.islider-active .page1 .tit').css('top',0)
+        $('.islider-active .page1 .left').css('margin-left',0)
+        $('.islider-active .page1 .right').css('margin-right',0)
+        $('.islider-active .page1 .center').css({
+            'top':'50%'
+        })
+
+   },300)
+  
+
+})
+</script>
+</body>
+</html>
